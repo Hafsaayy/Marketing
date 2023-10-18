@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+/* nav bar */
+#top_nav{
+    background-color: #e0e0eb;
+     padding:0% 15%;
+ 
+ }
+ 
+ #searchbox{
+     color:white;
+     background-color: #fcc302;
+     border: 0;
+     border-radius:0;
+     position: relative;
+     left:47px;
+     box-shadow: 5px 10px 11px 0px #00000021;
+ }
+ 
+ #searchbox::placeholder{
+     color:white;
+ }
+ 
+ #searchbtn{
+     position: relative;
+     z-index: 99;
+     background-color: #00bec9;
+     color:white;
+     border: 0;
+     border-radius: 0;
+ 
+ }
+ 
+ @media only screen and (max-width:1180px){
+     #search-form
+     {
+         margin-bottom: 30px;
+         margin-top:20px;
+     }
+ }
+ 
+ @media only screen and (max-width:900px){
+     #top_nav
+     {
+        padding: 0px;
+     }
+ }
+ 
+ /* banner */
+ #banner{
+     background-color: #fcc302;
+     padding-bottom: 20px;
+ }
+
+ 
+ #banner-text h1{
+     color: white;
+     font-size: 70px;
+     margin-top:100px;
+ }
+ 
+ #banner-text p{
+     color:white;
+     font-size: 20px;
+     margin-top:30px;
+     margin-bottom: 20px;
+ }
+ 
+ #banner-btn-1{
+     background-color: black;
+     border: 2px solid #00bec9;
+     color: white;
+
+ }
+ #banner-btn-1:hover{
+    background-color: red;
+    border: 2px solid #00bec9;
+    color: white;
+ 
+    
+}
+ 
+ #banner-btn-2{
+     color: white;
+     border: 2px solid white;
+     margin-left:20px;
+     Opacity: transparent;
+     display: none;
+ }
+
+ 
+ /* service */
+ #service-text{
+     padding-top: 5%;
+     padding-bottom: 5%;
+     padding-left:4%;
+ }
+ #service-btn{
+     color: white;
+     background-color: #fcc302;
+     border : 2px solid  #fcc302;
+ }
+ #service-image{
+     padding: 5%;
+ }
+ 
+ /* counter section */
+ #counter-section{
+     background-color: #fcc302;
+     padding-top: 50px;
+     padding-bottom:70px;
+ }
+ 
+ .counter-icon{
+     font-size:60px;
+ 
+ 
+ }
+ 
+ /* blog */
+ 
+ #blog{
+     padding-top: 70px;
+     padding-bottom: 70px;
+ }
+ 
+ #blog-title{
+     font-size:50px;
+     font-weight: bolder;
+ }
+ 
+ #blog-text{
+     font-size: 20px;
+  
+ }
+ 
+ .article-detail{
+     padding: 15px;
+     border: 1px solid rgb(185,185,185);
+     border-top: 0;
+     color: black;
+ }
+ 
+ .article-date, .article-link{
+     color:  #00bec9;
+     font-weight: 500;
+ 
+ }
+ 
+ /* footer */
+ 
+ #footer{
+     background-color: #343434;
+     
+     padding-top: 80px;
+     padding-bottom: 80px;
+ }
+ 
+ #footer a{
+     color: white;
+     text-decoration: none;
+ }
+ 
+ #footer-form{
+     margin-top:10px;
+     margin-bottom: 10px;
+ }
+ 
+ #footer-search-box{
+     background-color: #fcc302;
+     color: white;
+     border: 0;
+     padding:15px;
+     width: 100%;
+     max-width: 300px;
+     position: relative;
+     left: 10px;
+ }
+ 
+ #footer-submit-button{
+     background-color: #00bec9;
+    color: white;
+    border: 0;
+    border-radius: 0;
+    padding: 15px 40px;
+ }
+ 
+ .social-icons{
+     font-size: 25px;
+     padding-left: 5px;
+ 
+ }
+ 
+ /*.rounded-video {
+  
+     border-radius: 50px; 
+     overflow: hidden;   
+     width: 600px;
+     height: 600px;
+ }*/
+ 
+ @keyframes floatIn {
+     0% {
+         transform: translateY(-100%); /* Starts off screen */
+         opacity: 0;
+     }
+     100% {
+         transform: translateY(0); /* Ends in its original position */
+         opacity: 1;
+     }
+ }
+ 
+ #service-image {
+ 
+ 
+     /* Animation settings */
+     animation-name: floatIn;
+     animation-duration: 2s; /* Animation lasts for 2 seconds */
+     animation-timing-function: ease-out; /* Smooth ending */
+     animation-fill-mode: both; 
+ }
+ 
+ @keyframes floatInRotate {
+     0% {
+         transform: translateY(-100%) rotate(0deg); /* Starts off screen with no rotation */
+         opacity: 0;
+     }
+     100% {
+         transform: translateY(0) rotate(360deg); /* Ends in its original position after a full rotation */
+         opacity: 1;
+     }
+ }
+ 
+ @keyframes enhancedFloatInRotate {
+     0% {
+         transform: translateY(-100%) scale(0.5) rotate(-90deg); 
+         opacity: 0;
+     }
+     50% {
+         transform: translateY(-50%) scale(1.2) rotate(90deg); 
+         opacity: 0.6;
+     }
+     100% {
+         transform: translateY(0) scale(1) rotate(360deg); 
+         opacity: 1;
+     }
+ }
+ 
+ 
+ 
+ #banner-image{
+  
+ height: 500px;
+ width:500px;
+     /* Animation settings */
+     animation-name: enhancedFloatInRotate;
+     animation-duration: 2s; /* Animation lasts for 2 seconds */
+     animation-timing-function: ease-out; /* Smooth ending */
+     animation-fill-mode: backwards; 
+ }
+ 
+ 
+ @media only screen and (max-width: 500){
+     #footer-search-box{
+         max-width: 200px;
+     }
+     #footer{
+         padding-top:0px;
+     }
+ }
+ 
+ 
+ 
+ @keyframes fadeInSlideUp {
+     0% {
+         transform: translateY(20px);
+         opacity: 0;
+     }
+     100% {
+         transform: translateY(0);
+         opacity: 1;
+     }
+ }
+ 
+ #service-text {
+     opacity: 0;
+     animation: fadeInSlideUp 1.5s forwards 0.5s; 
+ }
+ 
+ 
+ #service-text h1,
+ #service-text p,
+ #service-text #service-btn  {
+     opacity: 0;
+     transform: translateY(20px);
+     animation: fadeInSlideUp 1.5s forwards;
+ }
+ 
+ #service-text h1 {
+     animation-delay: 0.5s;
+ }
+ 
+ #service-text p {
+     animation-delay: 0.8s;
+ }
+ 
+ #service-text #service-btn {
+     animation-delay: 1.1s;
+ }
+ 
+ /*#banner-text #banner-btn-2 {
+     animation-delay: 1.4s;
+ }
+ */
+ @keyframes zoomFadeRotate {
+     0% {
+         transform: scale(0.9) rotate(-10deg);
+         opacity: 0;
+     }
+     100% {
+         transform: scale(1) rotate(0deg);
+         opacity: 1;
+     }
+ }
+ 
+ #banner-text {
+     perspective: 1000px; 
+ }
+ 
+ #banner-text h1,
+ #banner-text p,
+ #banner-text button {
+     opacity: 0;  
+     transform: scale(0.9) rotate(-10deg);
+     animation: zoomFadeRotate 1.2s forwards;
+ }
+ 
+ #banner-text h1 {
+     animation-delay: 0.3s;
+ }
+ 
+ #banner-text p {
+     animation-delay: 0.6s;
+ }
+ 
+ #banner-text #banner-btn-1 {
+     animation-delay: 0.9s;
+ }
+ 
+ #banner-text #banner-btn-2 {
+     animation-delay: 1.2s;
+ }
+ 
+
+
+
+ /* Add a class that will reset the styles to their starting values */
+.scroll-hidden {
+    opacity: 0;
+    transform: scale(0.9) rotate(-10deg);
+}
+
+#banner-text h1,
+#banner-text p,
+#banner-text button {
+    animation: none;  /* Remove the initial animation */
+}
+
+#banner-image video.scroll-hidden {
+    opacity: 0;
+    transform: scale(0.9) rotate(-10deg);
+    animation: none; 
+}
